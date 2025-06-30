@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registro</title>
+  <link rel="stylesheet" href="/css/registro.css" />
+</head>
+<body>
+  <div class="wrapper fadeInDown">
+    <div id="formContent">
+      <!-- Título -->
+      <a href="/pagina/registrosesion.html"><h2 class="active">Registrarse</h2></a>
+      <a href="/pagina/inicio.html"><h2 class="inactive underlineHover">Inicio de Sesión</h2></a>
+
+      <!-- Icono -->
+      <div class="fadeIn first">
+        <img src="/img/registro.png" id="icon" alt="User Icon" />
+      </div>
+
+      <!-- Formulario de Registro -->
+      <form>
+        <input type="text" id="nombre" class="fadeIn second" name="nombre" placeholder="Nombre" required />
+        <input type="text" id="apellido" class="fadeIn second" name="apellido" placeholder="Apellido" required />
+        <input type="tel" id="telefono" class="fadeIn second" name="telefono" placeholder="Teléfono" required />
+        <input type="email" id="email" class="fadeIn second" name="email" placeholder="Correo electrónico" required />
+        <input type="password" id="password" class="fadeIn third" name="password" placeholder="Contraseña" required />
+        <input type="password" id="confirm-password" class="fadeIn third" name="confirm" placeholder="Confirmar contraseña" required />
+        <input type="submit" class="fadeIn fourth" value="Registrarse" />
+      </form>
+
+      <!-- Enlace para volver al inicio de sesión -->
+      <div id="formFooter">
+        <a class="underlineHover" href="/pagina/inicio.html">¿Ya tienes una cuenta?</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
