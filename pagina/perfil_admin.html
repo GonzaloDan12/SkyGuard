@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Perfil de Administrador - Drones de Seguridad</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="/css/perfil_admin.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="#">SkyGuard Admin</a>
+    <button
+      class="navbar-toggler text-white"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item px-3">
+          <a class="nav-link" href="#">Inicio</a>
+        </li>
+        <li class="nav-item px-3">
+          <a class="nav-link" href="#">Productos</a>
+        </li>
+        <li class="nav-item px-3">
+          <a class="nav-link" href="#">Pedidos</a>
+        </li>
+        <li class="nav-item px-3">
+          <a class="nav-link" href="#">Usuarios</a>
+        </li>
+        <li class="nav-item px-3">
+          <a class="nav-link" href="#">Cerrar sesión</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <div class="container main-body">
+    <div class="row gutters-sm">
+      <!-- Columna izquierda -->
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <div class="card-body text-center">
+            <img src="/img/droid.png" alt="Admin" class="rounded-circle" width="140" />
+            <h4>Roger Roger</h4>
+            <p class="text-secondary mb-1">Administrador</p>
+            <p class="text-muted font-size-sm">Confederación de Sistemas Independientes</p>
+            <button class="btn btn-primary btn-sm mb-1">Dashboard</button>
+          </div>
+        </div>
+        <div class="card mt-3">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <svg
+                class="icon-inline"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <line x1="2" y1="12" x2="22" y2="12" />
+                <path
+                  d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                />
+              </svg>
+              <strong>Website:</strong> <span class="text-secondary">skyguard.com</span>
+            </li>
+            <li class="list-group-item">
+              <svg
+                class="icon-inline"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                />
+              </svg>
+              <strong>Github:</strong> <span class="text-secondary">@skyguard</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Columna derecha -->
+      <div class="col-md-8">
+        <!-- Información del perfil -->
+        <div class="card mb-3">
+          <div class="card-body">
+            <div class="row mb-3">
+              <div class="col-sm-3"><strong>Nombre completo</strong></div>
+              <div class="col-sm-9 text-secondary">Roger Roger</div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-sm-3"><strong>Email</strong></div>
+              <div class="col-sm-9 text-secondary">rogerentendido@separatista.com</div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-sm-3"><strong>Teléfono</strong></div>
+              <div class="col-sm-9 text-secondary">(555) 123-4567</div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-sm-3"><strong>Dirección</strong></div>
+              <div class="col-sm-9 text-secondary">Nave del General Grievous, Coruscant</div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <a class="btn btn-info" href="#">Editar Perfil</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel de Administración -->
+        <div class="card mb-3">
+          <div class="card-header bg-primary text-white">
+            <strong>Panel de Administración</strong>
+          </div>
+          <div class="card-body">
+            <div class="row text-center">
+              <div class="col-md-4 mb-2">
+                <a class="btn btn-outline-primary btn-block" href="#">Gestión de Productos</a>
+              </div>
+              <div class="col-md-4 mb-2">
+                <a class="btn btn-outline-primary btn-block" href="#">Pedidos</a>
+              </div>
+              <div class="col-md-4 mb-2">
+                <a class="btn btn-outline-primary btn-block" href="#">Usuarios</a>
+              </div>
+              <div class="col-md-4 mb-2">
+                <a class="btn btn-outline-primary btn-block" href="#">Reportes</a>
+              </div>
+              <div class="col-md-4 mb-2">
+                <a class="btn btn-outline-primary btn-block" href="#">Configuración</a>
+              </div>
+              <div class="col-md-4 mb-2">
+                <a class="btn btn-outline-primary btn-block" href="#">Soporte</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel de Control Rápido -->
+        <div class="card mb-3">
+          <div class="card-header bg-success text-white">
+            <strong>Panel de Control Rápido</strong>
+          </div>
+          <div class="card-body">
+            <div class="row text-center">
+              <div class="col-md-4">
+                <h5>12</h5>
+                <p class="text-muted">Planes Activos</p>
+              </div>
+              <div class="col-md-4">
+                <h5>5</h5>
+                <p class="text-muted">Pedidos hoy</p>
+              </div>
+              <div class="col-md-4">
+                <h5>98%</h5>
+                <p class="text-muted">Satisfacción cliente</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Alertas del sistema -->
+        <div class="card mb-3">
+          <div class="card-header bg-warning text-dark">
+            <strong>Alertas del Sistema</strong>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <span class="text-danger font-weight-bold">Inventario bajo:</span> Dron SkyGuard X solo tiene 3 unidades disponibles.
+            </li>
+            <li class="list-group-item">
+              <span class="text-info font-weight-bold">Nuevo registro:</span> admin_dronex@example.com
+            </li>
+            <li class="list-group-item">
+              <span class="text-warning font-weight-bold">Pedido sin envío:</span> Orden #1234 lleva 7 días sin actualizar estado.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div>
+      © 2025 SkyGuard. Todos los derechos reservados. —
+      <a href="#">Política de privacidad</a> | <a href="#">Términos de servicio</a>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>

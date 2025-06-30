@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesión</title>
+    <link rel="stylesheet" href="/css/inicio.css">
+</head>
+<body>
+    <div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+    <a href="/pagina/inicio.html"><h2 class="active"> inicio sesión </h2></a>
+    <a href="/pagina/registrosesion.html"><h2 class="inactive underlineHover" hr>Registrarse </h2></a>
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <img src="/img/user.png" id="icon" alt="User Icon" />
+    </div>
+
+    <!-- Login Form -->
+    <form action="/pagina/perfil_user.html" method="get">
+  <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
+  <input type="text" id="password" class="fadeIn third" name="password" placeholder="password">
+  <input type="submit" class="fadeIn fourth" value="Iniciar sesión">
+</form>
+
+
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" href="#">Forgot Password?</a>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
