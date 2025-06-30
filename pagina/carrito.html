@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Bolsa - SkyGuard</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- Font Awesome (íconos) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="/css/carrito.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="#">SkyGuard</a>
+    
+    <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span><i class="fas fa-bars"></i></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+         <li class="nav-item px-3">
+          <a class="nav-link" href="../index.html">Inicio</a>
+        </li>
+        <li class="nav-item px-3">
+          <a class="nav-link" href="Catalogo.html">Servicio</a>
+        </li>
+        <li class="nav-item px-3">
+          <a class="nav-link" href="#">Producto</a>
+        </li>
+        <li class="nav-item px-3">
+          <a class="nav-link" href="inicio.html">Iniciar sesión</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="ml-auto d-flex align-items-center navbar-social-icons">
+      <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+    </div>
+  </nav>
+
+  <!-- MAIN -->
+  <main class="main-content container">
+    <div class="left-panel">
+      <div class="tabs">
+        <button class="tab-button active">Mi Carrito (2)</button>
+      </div>
+
+      <div class="product-list">
+        <div class="product-item">
+          <div class="product-image"><img src="/img/3ra.jpeg" alt="Dron Pro Mini v2"></div>
+          <div class="product-details">
+            <h3>Plan Dron Premium </h3>
+            <p>Tamaño: 256 GB, Color: Negro</p>
+            <p>Vendido por: Movil y Camara integrado.</p>
+            <p>Suscripción de 04 de Julio 2025 - 04 Julio 2026</p>
+            <button class="remove-button">Eliminar</button>
+          </div>
+          <div class="product-price">
+            <span class="original-price">$12,999.00</span>
+            <span class="current-price">$4,999.00</span>
+          </div>
+          <div class="product-quantity">
+            <button>-</button>
+            <span>1</span>
+            <button>+</button>
+          </div>
+          <div class="product-total">$4,999.00</div>
+        </div>
+
+        <div class="product-item">
+          <div class="product-image"><img src="/img/4ta.jpeg" alt="Dron Mavij Pro XLL v4"></div>
+          <div class="product-details">
+            <h3>Dron Mavij Pro XLL version 4</h3>
+            <p>Tamaño: 128 GB, Color: Gris</p>
+            <p>Vendido por: Movil y Camara integrado.</p>
+            <p>Suscripción de 04 de Julio 2025 - 04 Julio 2027</p>
+            <button class="remove-button">Eliminar</button>
+          </div>
+          <div class="product-price">
+            <span class="original-price">$5,000.00</span>
+            <span class="current-price">$2,299.00</span>
+          </div>
+          <div class="product-quantity">
+            <button>-</button>
+            <span>1</span>
+            <button>+</button>
+          </div>
+          <div class="product-total">$2,299.00</div>
+        </div>
+      </div>
+    </div>
+
+    <aside class="right-panel">
+      <div class="summary-box">
+        <h4>Detalle de Compra</h4>
+        <p>Subtotal (2 productos): <span>$17,999.00</span></p>
+        <p>Descuentos: <span>$10,701.00</span></p>
+        <p>Cupones: <span>$0.00</span></p>
+        <p>Costo de envío: <span>Gratis</span></p>
+        <hr>
+        <p class="total">Total (IVA Incluido): <span>$7,298.00</span></p>
+        <p class="note">*Los precios aplican de acuerdo a forma de pago.</p>
+        <button class="buy-button">Comprar</button>
+        <div class="payment-methods">
+          <h5>Formas de pago disponibles</h5>
+          <div class="payment-icons">
+            <img src="/img/visa.png" alt="Visa">
+            <img src="/img/master.jpg" alt="Mastercard">
+          </div>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-section">
+        <h3>Atención a Clientes</h3>
+        <ul>
+          <li><a href="#">Ayuda</a></li>
+          <li><a href="#">Preguntas Frecuentes</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Facturación Electrónica</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Información Legal</h3>
+        <ul>
+          <li><a href="#">Términos y Condiciones</a></li>
+          <li><a href="#">Aviso de Privacidad</a></li>
+          <li><a href="#">Política de Devoluciones</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Mi Cuenta</h3>
+        <ul>
+          <li><a href="#">Mi Perfil</a></li>
+          <li><a href="#">Mis Pedidos</a></li>
+          <li><a href="#">SkyGuard Crédito</a></li>
+        </ul>
+      </div>
+      <div class="footer-section social-media">
+        <h3>Síguenos</h3>
+        <div class="social-icons">
+          <a href="#"><img src="/img/facebook.png" alt="Facebook"></a>
+          <a href="#"><img src="/img/twiter.png" alt="Twitter"></a>
+          <a href="#"><img src="/img/insta.webp" alt="Instagram"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2025 SkyGuard. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS y dependencias -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
