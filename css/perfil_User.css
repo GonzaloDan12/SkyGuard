@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e2e8f0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.main-body {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #56baed;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+  border-radius: 0;
+}
+
+.navbar-brand,
+.nav-link {
+  color: white !important;
+  font-weight: 500;
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+  color: #1f2533 !important;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #56baed;
+  color: white;
+  padding: 40px 0;
+  margin-top: 60px;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.footer a {
+  color: #1f2533;
+  text-decoration: none;
+  transition: text-decoration 0.3s;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer .social-icons i {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #1f2533;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.footer .social-icons i:hover {
+  color: white;
+}
+
+.footer .row > div {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .container-carrito {
+    flex-direction: column;
+    padding: 0 10px;
+  }
+  .product-list,
+  .summary {
+    flex: unset;
+  }
+  .footer .text-left,
+  .footer .text-right {
+    text-align: center !important;
+  }
+}
+
+/* Tarjetas */
+.card {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.rounded-circle {
+  border: 3px solid #007bff;
+}
+
+/* Iconos alineados */
+.icon-inline {
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+/* Sticky para columna izquierda */
+.sticky-col {
+  position: sticky;
+  top: 20px;
+  max-height: calc(100vh - 40px);
+  overflow-y: auto;
+}
+
+/* Tamaño uniforme para columnas info plan y personal */
+.col-sm-3,
+.col-sm-4 {
+  font-weight: 600;
+}
+
+.text-secondary ul {
+  margin-bottom: 0;
+  padding-left: 1rem;
+}
