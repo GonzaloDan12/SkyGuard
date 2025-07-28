@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Pedidos Realizados - SkyGuard Admin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="/lib/css/admin-pedidos.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="#"><i class="fas fa-shield-alt"></i> SkyGuard Admin</a>
+    <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item px-3"><a class="nav-link" href="/lib/pagina/perfil_admin.php"><i class="fas fa-home"></i> Inicio</a></li>
+        <li class="nav-item px-3"><a class="nav-link" href="/lib/pagina/lista_productos.php"><i class="fas fa-box-open"></i> Productos</a></li>
+        <li class="nav-item px-3"><a class="nav-link" href="/lib/pagina/listapedidos.html"><i class="fas fa-shopping-cart"></i> Pedidos</a></li>
+        <li class="nav-item px-3"><a class="nav-link" href="/lib/pagina/lista_usuarios.php"><i class="fas fa-users"></i> Usuarios</a></li>
+        <li class="nav-item px-3"><a class="nav-link" href="/index.html"><i class="fas fa-sign-out-alt"></i> Cerrar sesión</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+    <div class="container">
+      <h2><i class="fas fa-shopping-cart"></i> Pedidos Realizados</h2>
+      <a href="/lib/pagina/perfil_admin.php" class="btn btn-skyguard mb-3">
+        <i class="fas fa-arrow-left"></i> Regresar al perfil
+      </a>
+      <div class="table-responsive">
+        <table class="table table-bordered table-hover">
+          <thead>
+            <tr>
+              <th>ID Pedido</th>
+              <th>Cliente</th>
+              <th>Correo Electrónico</th>
+              <th>Producto</th>
+              <th>Fecha</th>
+              <th>Estado</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>#00123</td><td>Juan Pérez</td><td>juanperez@email.com</td><td>Drone SGX-500</td><td>25/07/2025</td><td><span class="badge badge-success">Entregado</span></td><td>$12,500</td></tr>
+            <tr><td>#00124</td><td>María López</td><td>maria.lopez@email.com</td><td>Drone VisionAir X2</td><td>24/07/2025</td><td><span class="badge badge-warning">En camino</span></td><td>$9,800</td></tr>
+            <tr><td>#00125</td><td>Carlos Sánchez</td><td>csanchez@email.com</td><td>Drone MiniFly Pro</td><td>23/07/2025</td><td><span class="badge badge-danger">Cancelado</span></td><td>$3,400</td></tr>
+            <tr><td>#00126</td><td>Lucía Martínez</td><td>lucia.mtz@email.com</td><td>Drone SkyWatcher</td><td>22/07/2025</td><td><span class="badge badge-success">Entregado</span></td><td>$6,200</td></tr>
+            <tr><td>#00127</td><td>David Ortega</td><td>david.ortega@email.com</td><td>Drone SGX-500</td><td>21/07/2025</td><td><span class="badge badge-warning">En camino</span></td><td>$12,500</td></tr>
+            <tr><td>#00128</td><td>Ana Torres</td><td>ana.torres@email.com</td><td>Drone UltraEye</td><td>20/07/2025</td><td><span class="badge badge-success">Entregado</span></td><td>$11,300</td></tr>
+            <tr><td>#00129</td><td>Fernando Ruiz</td><td>fernando.ruiz@email.com</td><td>Drone MiniFly Pro</td><td>19/07/2025</td><td><span class="badge badge-danger">Cancelado</span></td><td>$3,400</td></tr>
+            <tr><td>#00130</td><td>Sofía Ramírez</td><td>sofia.ramirez@email.com</td><td>Drone VisionAir X2</td><td>18/07/2025</td><td><span class="badge badge-success">Entregado</span></td><td>$9,800</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div>
+      © 2025 SkyGuard. Todos los derechos reservados. — 
+      <a href="#">Política de privacidad</a> | <a href="#">Términos de servicio</a>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+</body>
+</html>

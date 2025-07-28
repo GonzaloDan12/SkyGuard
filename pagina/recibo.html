@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Detalle del Recibo</title>
+
+  <!-- Íconos y estilos de Bootstrap + FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+  
+  <!-- Enlace al archivo CSS externo -->
+  <link rel="stylesheet" href="/lib/css/recibo.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="#"><i class="fas fa-shield-alt"></i> SkyGuard</a>
+    <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarNav" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item px-3"><a class="nav-link" href="/lib/pagina/vista-camara.php"><i class="fas fa-drone"></i> Control de Dron</a></li>
+        <li class="nav-item px-3"><a class="nav-link" href="/lib/pagina/historial_compras.html"><i class="fas fa-file-invoice-dollar"></i> Compras</a></li>
+        <li class="nav-item px-3"><a class="nav-link" href="/lib/pagina/pagos_plan.html"><i class="fas fa-clipboard-list"></i> Pago</a></li>
+        <li class="nav-item px-3"><a class="nav-link" href="/index.html"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a></li>
+      </ul>
+    </div>
+    <div class="ml-auto d-flex align-items-center navbar-social-icons">
+      <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+    </div>
+  </nav>
+
+  <!-- MAIN -->
+  <main>
+    <div class="recibo-card">
+      <h2>Recibo de Pago #000123</h2>
+
+      <div class="info-row">
+        <div class="info-label">Fecha:</div>
+        <div>01 de Enero, 2025</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">Cliente:</div>
+        <div>Juan Pérez</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">Método de pago:</div>
+        <div>Tarjeta de Crédito</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">Descripción:</div>
+        <div>Plan Premium anual</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">Estado:</div>
+        <div>Pagado</div>
+      </div>
+
+      <div class="total">Total: $1,500.00 MXN</div>
+
+      <a href="/lib/pagina/historial_pagos.html" class="btn-volver"><i class="fas fa-arrow-left"></i> Volver al Historial</a>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-left">
+          <h5>Sobre SkyGuard</h5>
+          <p>
+            SkyGuard es una empresa líder en venta de drones para seguridad,
+            vigilancia y monitoreo inteligente.
+          </p>
+        </div>
+        <div class="col-md-6 text-right">
+          <h5>Contacto</h5>
+          <p>Email: contacto@skyguard.com</p>
+          <p>Tel: +52 55 1234 5678</p>
+          <div class="social-icons mt-2">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <p class="mb-0">© 2025 SkyGuard. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
